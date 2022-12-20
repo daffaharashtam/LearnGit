@@ -9,13 +9,125 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
+
+    <style>
+        p.first-paragraph {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            width: 400px;
+        }
+
+        .static {
+            position: static;
+            border: 1px solid #888;
+            margin: 10px;
+            padding: 10px;
+            width: 400px;
+            top: 30px;
+            bottom: 30px;
+        }
+
+        .relative {
+            position: relative;
+            left: 30px;
+            top: 20px;
+            border: 1px solid crimson;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 80px;
+            right: 50px;
+            width: 400px;
+            height: 100px;
+            border: 1px solid crimson;
+        }
+
+        .sticky {
+            /* position: -webkit-sticky; */
+            position: sticky;
+            top: 0;
+            width: 400px;
+            border: 1px solid blue;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 400px;
+            border: 1px solid peru;
+        }
+
+        .float {}
+    </style>
 </head>
 
 <body>
-    COBA EDIT, COMMIT, PULL, FETCH
 
-    <!--Test Branch 1-->
-    Test Branch 1
+    <h1>Berita Terbaru</h1>
+
+    <div class="sticky">
+        <p>Kerupuk 4</p>
+    </div>
+
+    <p class="first-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium vitae reprehenderit ea numquam rem
+        labore voluptatibus enim. Explicabo vel placeat non animi accusantium hic soluta similique rerum? Aperiam,
+        suscipit.
+    </p>
+    <p class="first-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium vitae reprehenderit ea numquam rem
+        labore voluptatibus enim. Explicabo vel placeat non animi accusantium hic soluta similique rerum? Aperiam,
+        suscipit.
+    </p>
+    <p class="first-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium vitae reprehenderit ea numquam rem
+        labore voluptatibus enim. Explicabo vel placeat non animi accusantium hic soluta similique rerum? Aperiam,
+        suscipit.
+    </p>
+    <p class="first-paragraph">
+        <img src="http://via.placeholder.com/640x360
+" alt="">
+    </p>
+
+    <p class="first-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium vitae reprehenderit ea numquam rem
+        labore voluptatibus enim. Explicabo vel placeat non animi accusantium hic soluta similique rerum? Aperiam,
+        suscipit.
+    </p>
+    <p class="first-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium vitae reprehenderit ea numquam rem
+        labore voluptatibus enim. Explicabo vel placeat non animi accusantium hic soluta similique rerum? Aperiam,
+        suscipit.
+    </p>
+    <p class="first-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium vitae reprehenderit ea numquam rem
+        labore voluptatibus enim. Explicabo vel placeat non animi accusantium hic soluta similique rerum? Aperiam,
+        suscipit.
+    </p>
+
+
+    <div class="static">
+        <p>Kerupuk 1</p>
+    </div>
+
+    <div class="static">
+        <div class="relative">
+            <p>Kerupuk 2</p>
+        </div>
+    </div>
+
+    <div class="absolute">
+        <p>Kerupuk 3</p>
+    </div>
+
+
+
+    <div class="fixed">
+        <p>Kerupuk 5</p>
+    </div>
 
     <script src="" async defer></script>
 </body>

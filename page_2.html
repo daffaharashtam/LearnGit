@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-container>div {
+            background-color: yellow;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #div_3 {
+            background-color: aqua;
+        }
+
+        .grid-container {
+            display: grid;
+            column-gap: 50px;
+            row-gap: 50px;
+            grid-template-columns: auto auto auto;
+        }
+
+        .grid-container>div {
+            background-color: aqua;
+        }
+
+        .grid-container>div:nth-child(1) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div style="order : 1;background-color: red;">4</div>
+        <div style="order : 2;background-color: red;">3</div>
+        <div id="#div_3" style="order : 3;">1</div>
+        <div id="#div_3" style="order : 4;">2</div>
+    </div>
+    <h2>Grid Example</h2>
+    <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
